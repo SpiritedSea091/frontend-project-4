@@ -1,0 +1,208 @@
+body{
+  background-image: url("images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  /* font-family: "manrope", sans-serif;
+  font-weight: 600; */
+  font-size: 15px;
+  color: hsl(225, 20%, 60%);
+  background-color: hsl(230, 100%, 99%);
+}
+
+p{
+
+}
+hr{
+  margin-bottom: 8%;
+}
+h1{
+  font-size: 2.0rem;
+  font-weight: bold;
+  color:hsl(227, 35%, 25%);
+}
+
+li{
+  list-style : url("images/icon-check.svg");
+}
+button{
+  background-color: hsl(227, 35%, 25%);
+  color: hsl(226, 100%, 87%);
+  border: none;
+  border-radius: 20px;
+  padding: 4% 23%;
+}
+
+.floating-img{
+  position: absolute;
+  left: 45%;
+  top: 6%;
+  z-index: -1;
+}
+
+.container{
+  width: 40%;
+}
+
+.title-div{
+  margin: 16% 0;
+  text-align: center;
+}
+
+.middle-box{
+  background-color: hsl(0, 0%, 100%);
+  width:100%;
+  height:auto;
+  padding: 7% 10% 3%;
+  box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.toggle-div{
+  padding: 5% 0;
+  text-align: center;
+}
+
+/* Styling the text on each row in the main box-------------------- */
+
+.row-1{
+  font-weight: 500;
+  align-items: center;
+  letter-spacing: 0.75px;
+
+}
+.pageviews{
+  text-transform: uppercase;
+}
+.dollar{
+  font-family: "manrope", sans-serif;
+  font-weight: 800;
+  font-size: 2.75rem;
+  color: hsl(227, 35%, 25%);
+}
+.dollar-pm{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.row-2{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+.discount25{
+  position: absolute;
+  right: 15px;
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  border-radius: 12px;
+  padding: 0 8px;
+  font-size: 0.7rem;
+}
+.row-3{
+  font-size: 0.8rem;
+  line-height: 2;
+  align-items: center;
+}
+.trial-button{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* font-family: 'Manrope', sans-serif;
+font-weight: 600,800 */
+
+/* CSS for the Slider ---------------------------------------------- */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      -webkit-appearance: none;
+/*       overflow-x: hidden; */
+/*       overflow-y: hidden; */
+      width: 100%;
+      height: 10px;
+      background-color: hsl(224, 65%, 95%);
+      border-radius: 4px;
+      margin: 10% 0;
+    }
+
+    input[type='range']::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      background: hsl(174, 86%, 45%);
+      background-image: url("images/icon-slider.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      box-shadow: 0 20px 30px 0 hsl(174, 77%, 80%);
+/*       box-shadow: -100px 0 0 80px hsl(174, 77%, 80%); */
+    }
+
+}
+
+
+/* CSS for the toggle switch ----------------------------------------*/
+/* The switch - the box around the switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin: 0 8px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.toggle {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.toggle:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .toggle {
+  background-color: #2196F3;
+}
+
+input:focus + .toggle {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .toggle:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.toggle.round {
+  border-radius: 20px;
+}
+
+.toggle.round:before {
+  border-radius: 50%;
+}
