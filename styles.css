@@ -199,17 +199,17 @@ font-weight: 600,800 */
 }
 
 input:checked + .toggle {
-  background-color: #2196F3;
+  background-color: hsl(175, 65%, 41%);
 }
 
 input:focus + .toggle {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px hsl(175, 65%, 41%);
 }
 
 input:checked + .toggle:before {
-  -webkit-transform: translateX(20px);
-  -ms-transform: translateX(20px);
-  transform: translateX(20px);
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
 }
 
 /* Rounded sliders */
