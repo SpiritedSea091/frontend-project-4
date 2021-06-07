@@ -31,30 +31,31 @@
     <div class="middle-box">
       <!-- Row 1 content -->
       <div class="row row-1">
-        <div class="col-md-6 col-xs-12 pageviews">
+        <div class="col-md-6 col-xs-12 pageviews order-md-1">
           <span id= "noOfViews">100K</span>
           Pageviews
         </div>
-        <div class="col-md-6 col-xs-12 dollar-pm">
-          <span class="dollar" id= "costOfViews">$16.00 </span>
+        <!-- SLIDER -->
+        <div class="slidecontainer col-xs-12 order-md-3">
+          <input type="range" min="1" max="5" value="2" class="slider" id="myRange">
+        </div>
+        <div class="col-md-6 col-xs-12 dollar-pm order-md-2">
+          <span class="dollar" id= "costOfViews">$12.00 </span>
           <span>/month</span>
         </div>
       </div>
-      <!-- SLIDER -->
-      <div class="slidecontainer">
-        <input type="range" min="1" max="5" value="2" class="slider" id="myRange">
 
-      </div>
       <!-- Row 2 content -->
       <div class="toggle-div row-2">
-        <span>Monthly Billing</span>
+        <span class = "span-2">Monthly Billing</span>
         <!-- Toggle switch -->
         <label class="switch">
           <input type="checkbox" id="discount-toggle">
           <span class="toggle round"></span>
         </label>
-        <span>Yearly Billing</span>
+        <span class = "span-2">Yearly Billing</span>
         <span class= "discount25">25% discount</span>
+        <span class= "discount25m">-25%</span>
       </div>
       <hr>
       <!-- Row 3 content -->
@@ -62,9 +63,12 @@
         <div class="col-md-6 col-xs-12">
           <ul>
             <li>Unlimited websites</li>
+
             <li>100% data ownership</li>
+
             <li>Email reports</li>
           </ul>
+
         </div>
         <div class="col-md-6 col-xs-12 trial-button">
           <button class="" type="button" name="button">Start my trial</button>
