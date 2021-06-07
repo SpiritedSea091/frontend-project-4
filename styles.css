@@ -250,6 +250,8 @@ input:checked + .toggle:before {
   }
   .middle-box{
     position: relative;
+    padding-bottom: 10%;
+    margin-bottom: 50%;
   }
   hr{
     position: absolute;
